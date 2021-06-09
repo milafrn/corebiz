@@ -3,18 +3,16 @@ import Logo from "../../assets/logo.svg";
 import SearchIcon from "../../assets/search.svg";
 import UserIcon from "../../assets/user.svg";
 import CartIcon from "../../assets/cart.svg";
-import { BrowserRouter, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import * as S from "./styled";
 
 const Header = () => {
   return (
     <S.Header>
-      <BrowserRouter>
-        <Link to="/">
-          <Logo className="logo" />
-        </Link>
-      </BrowserRouter>
+      <Link to="/">
+        <Logo className="logo" />
+      </Link>
       <S.SearchWrapper>
         <S.SearchInput placeholder="O que está procurando?" />
         <SearchIcon className="search-icon" />
