@@ -1,6 +1,8 @@
 import React from "react";
-import Header from "./components/Header";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Header from "./components/Header";
+import Banner from "./components/Banner";
+
 
 function App() {
   return (
@@ -10,6 +12,7 @@ function App() {
           <Route exact path="/" component={Header} />
         </Switch>
       </Router>
+      <Banner />
     </>
   );
 }

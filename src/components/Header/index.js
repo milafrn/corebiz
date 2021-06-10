@@ -1,8 +1,8 @@
 import React from "react";
-import Logo from "../../assets/logo.svg";
-import SearchIcon from "../../assets/search.svg";
-import UserIcon from "../../assets/user.svg";
-import CartIcon from "../../assets/cart.svg";
+import {ReactComponent as Logo} from "../../assets/logo.svg";
+import {ReactComponent as SearchIcon} from "../../assets/search.svg";
+import {ReactComponent as UserIcon} from "../../assets/user.svg";
+import {ReactComponent as CartIcon} from "../../assets/cart.svg";
 import { Link } from "react-router-dom";
 
 import * as S from "./styled";
