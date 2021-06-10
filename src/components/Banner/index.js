@@ -1,8 +1,7 @@
 import React from "react";
 import bannerImage from "../../assets/banner.png";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+
 
 import * as S from "./styled";
 
