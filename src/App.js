@@ -6,6 +6,7 @@ import Shelf from "./components/Shelf";
 import Newsletter from "./components/Newsletter";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Footer from "./components/Footer";
 
 function App() {
   const [quantity, setQuantity] = useState(
@@ -26,6 +27,7 @@ function App() {
       <Banner />
       <Shelf shelfTitle="Mais Vendidos" productQuantity={setQuantity} />
       <Newsletter />
+      <Footer />
     </>
   );
 }
