@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Test Jussi
+This project was created with the create-react-app, a boilerplate from Facebook React cli.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 1 - Prepare your machine 
+Have a version of Node.js installed on your computer >= v11.11.0 
+You can install here: https://nodejs.org/en/
 
-## Available Scripts
+Have Yarn installed
+You can install here: https://yarnpkg.com/
 
-In the project directory, you can run:
+## 2 - Understanding the project
+This project is based on ReactJs and therefore its structure uses the concept of components, its styling is done through the Sass post-processor, which allows you to use other functions in addition to what Css normally allows, for the requests we are using Axios which is a library based on promises and this project use react-slick for slides.
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 3 - Putting to work
+Enter the project folder and run the command 
+`yarn install`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+After all the libraries are installed, run the command
+`yarn start`
 
-### `yarn test`
+The above command will build the project files and create the local react server, it will also build the Sass files.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## About styled-components
+This project uses styled-components as the principal method for stylization, to use it you can create a .js file in your component folder and call it the `styled` file inside the your component folder together `index.js`
 
-### `yarn build`
+for the initialize in `styled.js` make `import styled from "styled-components";`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`import styled from "./styled";` in index.js`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Styled-components allows you to nest stylizations on js
+- Styled-components is css on js
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+See more about here: https://styled-components.com/
 
-### `yarn eject`
+## About Axios 
+Axios is an HTTP client based on Promises to make requests, it can be used both in the browser and in the NodeJs.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+See more about here: https://github.com/axios/axios
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## The Api Used
+See more about here: https://documenter.getpostman.com/view/1811817/Szzj8yAq?version=latest
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## About React-slick
+React-slick is a lib for slides carousel
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+See More about here: https://react-slick.neostack.com/
