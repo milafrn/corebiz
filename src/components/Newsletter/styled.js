@@ -29,11 +29,11 @@ export const NewsletterSubTitle = styled.p`
 
 export const NewsletterFormWrapper = styled.form`
   display: flex;
+margin-top: 16px;
 `;
 
 
 export const NewsletterInputWrapper = styled.div`
-  margin-top: 16px;
 `;
 
 export const NewsletterInput = styled.input`
