@@ -58,6 +58,7 @@ export const FooterInstitutionalButton = styled.button`
   font-family: "Nunito", sans-serif;
   font-weight: 600;
   font-size: 12px;
+  cursor: pointer;
   &:first-child {
     margin: 0;
   }
@@ -74,6 +75,7 @@ export const FooterInstitutionalIcon = styled.span`
   font-size: 10px;
   font-family: "Nunito", sans-serif;
   font-weight: 400;
+  cursor: pointer;
   & .logo {
     margin-right: 25px;
     margin-top: 4px;
