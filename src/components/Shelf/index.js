@@ -8,7 +8,7 @@ import Slider from "react-slick";
 
 import * as S from "./styled";
 
-const Shelf = ({ shelfTitle }) => {
+const Shelf = ({ shelfTitle, productQuantity }) => {
   const [shelfs, setShelfs] = useState([]);
 
   useEffect(() => {
@@ -39,7 +39,7 @@ const Shelf = ({ shelfTitle }) => {
     slidesToShow: 4,
     slidesToScroll: 1,
     prevArrow: <ArrowLeft />,
-    nextArrow: <ArrowRight />
+    nextArrow: <ArrowRight />,
   };
 
   return (
@@ -90,7 +90,18 @@ const Shelf = ({ shelfTitle }) => {
                       }x de ${priceConvert(shelf.installments[0].value)}`
                     : ""}
                 </S.ShelfProductInstallments>
-                <S.ShelfProductButton className="shelf-product__button">
+                <S.ShelfProductButton
+                  className="shelf-product__button"
+                  onClick={() =>
+                    productQuantity((prevValue) => {
+                      console.log(prevValue);
+                      const newValue = prevValue + 1;
+                      localStorage.setItem("quantity", newValue);
+                      console.log(newValue);
+                      return newValue;
+                    })
+                  }
+                >
                   Comprar
                 </S.ShelfProductButton>
               </S.ShelfProductData>

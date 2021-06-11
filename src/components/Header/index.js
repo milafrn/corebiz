@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 import * as S from "./styled";
 
-const Header = () => {
+const Header = ({quantity}) => {
   return (
     <S.Header>
       <Link to="/">
@@ -23,7 +23,7 @@ const Header = () => {
       </S.UserWrapper>
       <S.CartWrapper>
         <CartIcon />
-        <S.CartQuantity>1</S.CartQuantity>
+        <S.CartQuantity>{quantity}</S.CartQuantity>
       </S.CartWrapper>
     </S.Header>
   );
