@@ -1,4 +1,4 @@
-# Test Jussi
+# Test Corebiz
 This project was created with the create-react-app, a boilerplate from Facebook React cli.
 
 ## 1 - Prepare your machine 
